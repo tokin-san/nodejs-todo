@@ -17,7 +17,11 @@ router.put('/users/:id', function(req, res, next) {
 });
 
 router.delete('/users/:id', function(req, res, next) {
-    res.json(user_controller.destroy(req.params.id))
+    res.json(user_controller.destroy(req.params.id));
+});
+
+router.delete('/users', function(req, res, next) {
+    res.json(user_controller.destroy_all());
 });
 
 module.exports = router;
