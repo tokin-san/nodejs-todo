@@ -30,9 +30,4 @@ Make sure you can access http://localhost:3000/
         "name": "new_name"
     }
     ```
-- DELETE /api/users
-    ```json
-    {
-        "id": 1
-    }
-    ```
+- DELETE /api/users/1
